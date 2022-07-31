@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: us.gcr.io/durable-spot-354112/redis
+        image: redis:5.0-alpine
         ports:
         - containerPort: 6379
 ---
