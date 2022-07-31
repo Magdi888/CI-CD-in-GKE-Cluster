@@ -1,12 +1,6 @@
 def gv
 pipeline {
     agent any
-
-    parameters {
-        string(name: 'namespace', defaultValue: 'default', description: 'Namespace to deploy on')
-    }
-
-
     stages {
         stage('start') {
             steps {
@@ -25,7 +19,7 @@ pipeline {
         stage('CD') {
             steps {
                 script {
-                    gv.Deploy(${namespace})
+                    gv.Deploy()
                 }
             }
         }
