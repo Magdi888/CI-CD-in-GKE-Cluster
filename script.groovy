@@ -10,7 +10,7 @@ def BuildImage() {
 }
 
 def Deploy() {
-    sh 'kubectl apply -Rf ./K8s_resources -n $namespace'
+    sh 'kubectl apply -Rf ./K8s_resources -n development'
 }
 
 return this
