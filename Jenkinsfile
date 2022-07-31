@@ -19,7 +19,7 @@ pipeline {
         stage('CD') {
             steps {
                 script {
-                    
+                    gv.Deploy()
                 }
             }
         }
